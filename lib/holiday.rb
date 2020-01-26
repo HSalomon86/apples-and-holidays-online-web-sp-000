@@ -86,9 +86,9 @@ holiday_hash.each do |season,holidays|
       array = holly.split("_")
       new_array = array.collect { |x| x.capitalize}
       holly = new_array.join(" ")
-
-
-
+      puts "#{holly}: #{items.join(", ")}"
+    end
+  end
 end
 
 def all_holidays_with_bbq(holiday_hash)
