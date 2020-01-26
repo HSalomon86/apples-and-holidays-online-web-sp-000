@@ -82,6 +82,10 @@ holiday_hash.each do |season,holidays|
   period.capitalize!
   puts "#{period}:"
     holidays.each do |holiday, items|
+      holly = holiday.to_s
+      array = holly.split("_")
+      new_array = array.collect { |x| x.capitalize}
+      holly = new_array.join(" ")
 
 
 
